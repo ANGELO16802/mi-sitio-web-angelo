@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega de Guías | Angelo Fabian Cuadros Barrios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: #f1f5f9;
+            color: #0f172a;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Tarjeta central */
+        .card-container {
+            background: #ffffff;
+            width: 100%;
+            max-width: 480px;
+            padding: 40px 32px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+            text-align: center;
+        }
+
+        /* Encabezado y títulos */
+        .header-section h1 {
+            font-size: 1.85rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .nombre {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #64748b;
+            margin-bottom: 32px;
+        }
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+        }
+
+        .btn-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            padding: 15px 18px;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            color: #172554;
+            background: #ffffff;
+            font-size: 0.98rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.22s ease, box-shadow 0.22s ease,
+                        border-color 0.22s ease, background 0.22s ease;
+            box-shadow: 0 3px 10px rgba(15, 23, 42, 0.045);
+        }
+
+        .btn-link span {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .btn-link span::before {
+            content: "↗";
+            display: grid;
+            place-items: center;
+            width: 34px;
+            height: 34px;
+            border-radius: 10px;
+            color: #ffffff;
+            background: #1e3a8a;
+            font-size: 1.05rem;
+            font-weight: 700;
+            transition: background 0.22s ease, transform 0.22s ease;
+        }
+
+        .btn-link:hover {
+            transform: translateY(-3px);
+            border-color: #93c5fd;
+            background: #f8fbff;
+            box-shadow: 0 10px 22px rgba(30, 58, 138, 0.11);
+        }
+
+        .btn-link:hover span::before {
+            background: #2563eb;
+            transform: rotate(8deg);
+        }
+
+        .btn-link:active {
+            transform: translateY(-1px);
+        }
+
+        .btn-primary,
+        .btn-success {
+            background: #ffffff;
+        }
+
+        .btn-primary:hover,
+        .btn-success:hover {
+            background: #f8fbff;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            min-width: 20px;
+            min-height: 20px;
+            padding: 3px;
+            box-sizing: content-box;
+            color: #64748b;
+            background: #f1f5f9;
+            border-radius: 8px;
+            stroke-width: 2;
+        }
+
+        .btn-link:hover .icon {
+            color: #1d4ed8;
+            background: #dbeafe;
+        }
+
+        @media (max-width: 520px) {
+            .card-container {
+                padding: 32px 22px;
+            }
+
+            .btn-link {
+                padding: 13px 14px;
+            }
+        }
+        .footer-info {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 32px;
+            padding-top: 20px;
+            border-top: 1px solid #f1f5f9;
+        }
+
+        .badge {
+            background-color: #f8fafc;
+            color: #64748b;
+            border: 1px solid #e2e8f0;
+            font-size: 0.8rem;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="card-container">
+        <div class="header-section">
+            <h1>Entrega de Guías</h1>
+            <p class="nombre">Angelo Fabian Cuadros Barrios</p>
+        </div>
+
+        <div class="links-container">
+            <a href="Guia1/santa-rosa-Cuadros/index.html" class="btn-link btn-primary" target="_blank" rel="noopener">
+                <span>Ver Guía 1</span>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+            </a>
+
+            <a href="Guia2/santa-rosa-Cuadros/index.html" class="btn-link btn-success" target="_blank" rel="noopener">
+                <span>Ver Guía 2</span>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+            </a>
+
+            <a href="Guia3/santa-rosa-Cuadros/index.html" class="btn-link btn-primary" target="_blank" rel="noopener">
+                <span>Ver Guía 3</span>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+            </a>
+           
+            <a href="Guia4/santa-rosa-Cuadros/index.html" class="btn-link btn-primary" target="_blank" rel="noopener">
+                <span>Ver Guía 4</span>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+            </a>
+
+            <a href="Guia5/santa-rosa-Cuadros/index.html" class="btn-link btn-primary" target="_blank" rel="noopener">
+                <span>Ver Guía 5</span>
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+            </a>
+        </div>
+    </main>
+</body>
+</html>
